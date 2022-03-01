@@ -14,7 +14,7 @@ $array2 = array("Science Fiction", "Action", "Thriller", "Season");
 
 $directory = "D:/Installations/laragon/www/php-built-in-fun/new-folder/sub-folder";
 
-/***************************** 71 array_push() *******************************/
+/***************************** 81 array_push() *******************************/
 
 $array = array('lion', 'rat', 'snake', 'bear', 'cat');
 pre_r($array);
@@ -23,7 +23,7 @@ $new_array = array_push($array, 'dog');
 pre_r($array);
 echo BR;
 
-/***************************** 72 floor() *******************************/
+/***************************** 82 floor() *******************************/
 
 echo floor(12.5) . BR;
 echo floor(19.9) . BR;
@@ -32,35 +32,35 @@ echo floor(-12.5) . BR;
 echo floor(-19.9) . BR;
 echo floor(-11.1) . BR;
 
-/***************************** 73 strtotime() *******************************/
+/***************************** 83 strtotime() *******************************/
 
 echo strtotime("now") . BR;
 echo date('d-M-Y', strtotime("now")) . BR;
 echo date('jS F, Y', strtotime("now")) . BR;
 
-/***************************** 74 htmlspecialchars() *******************************/
+/***************************** 84 htmlspecialchars() *******************************/
 
 $html = "<img style='width:50px; height=:50px;' src='https://clevertechie.com/womb-is-the-key.jpg'>";
 echo $html . BR;
 echo htmlspecialchars($html) . BR;
 echo "&lt; &gt;" . BR;
 
-/***************************** 75 ini_get() *******************************/
+/***************************** 85 ini_get() *******************************/
 
 echo 'display_errors = ' . ini_get('display_errors') . BR;
 
-/***************************** 76 ini_set() *******************************/
+/***************************** 86 ini_set() *******************************/
 
 ini_set('display_errors', '0');
 echo "display_errors = " . ini_get('display_errors') . BR;
 
-/***************************** 77 chr() *******************************/
+/***************************** 87 chr() *******************************/
 
-echo chr(65) . chr(72) . chr(77) . chr(65) . chr(68) . BR;
+echo chr(65) . chr(82) . chr(88) . chr(65) . chr(68) . BR;
 $elephant = chr(240) . chr(159) . chr(144) . chr(152);
 echo $elephant . BR;
 
-/***************************** 78 extension_loaded() *******************************/
+/***************************** 88 extension_loaded() *******************************/
 
 // php -m to check how many extenstions loads
 
@@ -70,7 +70,7 @@ foreach ($extenstions as $extenstion) {
     echo extension_loaded($extenstion) ? "$extenstion is loaded!" . BR : "$extenstion is not loaded!" . BR;
 }
 
-/***************************** 79 is_bool() *******************************/
+/***************************** 89 is_bool() *******************************/
 
 $a = false;
 $b = 9;
@@ -82,7 +82,7 @@ if (is_bool($b) !== true) {
     echo var_export($b) . " is not a boolean" . BR;
 }
 
-/***************************** 80 ksort() *******************************/
+/***************************** 90 ksort() *******************************/
 
 $keywords = array(
     'm' => 'mother',
