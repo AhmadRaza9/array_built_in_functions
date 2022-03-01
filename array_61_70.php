@@ -18,18 +18,18 @@ $directory = "D:/Installations/laragon/www/php-built-in-fun/new-folder/sub-folde
 
 // mkdir("D:/Installations/laragon/www/php-built-in-fun/new-folder/sub-folder", 0777, true);
 
-/***************************** 52 is_callable() *******************************/
+/***************************** 62 is_callable() *******************************/
 $print_array = 'pre_r';
 echo is_callable($print_array, false, $callable_name) . BR;
 echo $callable_name . BR;
 
-/***************************** 53 ltrim() *******************************/
+/***************************** 63 ltrim() *******************************/
 $string = " This is a message";
 var_dump($string);
 echo BR;
 var_dump(ltrim($string, " Th"));
 echo BR;
-/***************************** 54 ob_start() *******************************/
+/***************************** 64 ob_start() *******************************/
 ob_start();
 $hello = "Welcome to my awesome web site!";
 echo $hello;
@@ -51,28 +51,28 @@ function callback($buffer)
 </html>
 <?php
 
-/***************************** 55 round() *******************************/
+/***************************** 65 round() *******************************/
 echo round(4.2) . BR;
-echo round(2.9857, PHP_ROUND_HALF_UP) . BR;
-echo round(-5.045, PHP_ROUND_HALF_DOWN) . BR;
+echo round(2.9867, PHP_ROUND_HALF_UP) . BR;
+echo round(-6.046, PHP_ROUND_HALF_DOWN) . BR;
 echo round(9.99, PHP_ROUND_HALF_ODD) . BR;
 echo round(9.99, PHP_ROUND_HALF_EVEN) . BR;
 
-/***************************** 56 fwrite() *******************************/
+/***************************** 66 fwrite() *******************************/
 // $handle = fopen('index.php', 'w');
 // fwrite($handle, "This is a good day to die");
 
-/***************************** 57 array_unique() *******************************/
+/***************************** 67 array_unique() *******************************/
 $animals = array("Lion", "Cat", "Zebra", "Bear", "Cat", "Lion", "Dog", "Dog");
 pre_r($animals);
 $unique_animals = array_unique($animals);
 pre_r($unique_animals);
 
-/***************************** 58 array_search() *******************************/
+/***************************** 68 array_search() *******************************/
 $searched = array_search("Dog", $unique_animals, true);
 echo $unique_animals[$searched] . BR;
 
-/***************************** 59 reset() *******************************/
+/***************************** 69 reset() *******************************/
 
 echo current($unique_animals) . BR;
 echo next($unique_animals) . BR;
